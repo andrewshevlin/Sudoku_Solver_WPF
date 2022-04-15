@@ -23,7 +23,7 @@
                     Value="1" />
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid Name="Grid_Main_Grid">
         <StackPanel Orientation="Vertical">
             <!--Section Row 1-->
             <StackPanel Orientation="Horizontal">
@@ -33,8 +33,9 @@
                         Margin="10,10,0,0">
                     <StackPanel Orientation="Vertical">
                         <!--Row 1-->
-                        <StackPanel Orientation="Horizontal">
-                            <TextBox Name="TextBox_1" Style="{StaticResource GridBoxStyle}"/>
+                        <StackPanel Orientation="Horizontal"
+                                    Name="SP_Test">
+                            <TextBox Name="TextBox_1" Style="{StaticResource GridBoxStyle}" />
                             <TextBox Name="TextBox_2" Style="{StaticResource GridBoxStyle}" />
                             <TextBox Name="TextBox_3" Style="{StaticResource GridBoxStyle}"/>
                         </StackPanel>
@@ -270,14 +271,8 @@
 
             <Button Name="Button_Run"
                     Margin="10"
-                    FontSize="18">Run</Button>
-
-
-
-        </StackPanel>
-        
-        
-        
-        
+                    FontSize="18"
+                    Click="Run_Button_Click">Run</Button>
+        </StackPanel> 
     </Grid>
 </Window>
