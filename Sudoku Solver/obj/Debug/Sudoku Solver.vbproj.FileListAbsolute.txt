@@ -1,0 +1,18 @@
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe.config
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.exe
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.pdb
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\bin\Debug\Sudoku Solver.xml
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.vbproj.AssemblyReference.cache
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.vbproj.SuggestedBindingRedirects.cache
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\MainWindow.g.vb
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Application.g.vb
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.cache
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver_MarkupCompile.lref
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\MainWindow.baml
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.g.resources
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku_Solver.Resources.resources
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.vbproj.GenerateResource.cache
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.vbproj.CoreCompileInputs.cache
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.exe
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.xml
+C:\Users\andre\Documents\VS Apps\Sudoku Solver\Sudoku Solver\obj\Debug\Sudoku Solver.pdb

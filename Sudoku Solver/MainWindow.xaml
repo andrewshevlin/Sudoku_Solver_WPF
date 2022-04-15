@@ -5,8 +5,279 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sudoku_Solver"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Sudoku Solver" SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <Style x:Key="GridBoxStyle"
+               TargetType="TextBox">
+            <Setter Property="Width"
+                    Value="40"/>
+            <Setter Property="Height"
+                    Value="40"/>
+            <Setter Property="HorizontalContentAlignment"
+                    Value="Center" />
+            <Setter Property="VerticalContentAlignment"
+                    Value="Center" />
+            <Setter Property="FontSize"
+                    Value="30" />
+            <Setter Property="MaxLength"
+                    Value="1" />
+        </Style>
+    </Window.Resources>
     <Grid>
+        <StackPanel Orientation="Vertical">
+            <!--Section Row 1-->
+            <StackPanel Orientation="Horizontal">
+                <!--Grid 1-->
+                <Border BorderBrush="Black"
+                        BorderThickness="4,4,2,2"
+                        Margin="10,10,0,0">
+                    <StackPanel Orientation="Vertical">
+                        <!--Row 1-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_1" Style="{StaticResource GridBoxStyle}"/>
+                            <TextBox Name="TextBox_2" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_3" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 2-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_10" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_11" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_12" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 3-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_19" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_20" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_21" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!--Grid 2-->
+                <Border BorderBrush="Black"
+                        BorderThickness="2,4,2,2"
+                        Margin="0,10,0,0">
+                    <StackPanel Orientation="Vertical">
+                        <!--Row 1-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_4" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_5" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_6" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 2-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_13" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_14" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_15" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 3-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_22" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_23" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_24" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!--Grid 3-->
+                <Border BorderBrush="Black"
+                        BorderThickness="2,4,4,2"
+                        Margin="0,10,10,0">
+                    <StackPanel Orientation="Vertical">
+                        <!--Row 1-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_7" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_8" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_9" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 2-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_16" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_17" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_18" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 3-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_25" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_26" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_27" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <!--Section Row 2-->
+            <StackPanel Orientation="Horizontal">
+                <!--Grid 4-->
+                <Border BorderBrush="Black"
+                        BorderThickness="4,2,2,2"
+                        Margin="10,0,0,0">
+                    <StackPanel Orientation="Vertical">
+                        <!--Row 1-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_28" Style="{StaticResource GridBoxStyle}"/>
+                            <TextBox Name="TextBox_29" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_30" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 2-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_37" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_38" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_39" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 3-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_46" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_47" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_48" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!--Grid 5-->
+                <Border BorderBrush="Black"
+                        BorderThickness="2,2,2,2"
+                        Margin="0,0,0,0">
+                    <StackPanel Orientation="Vertical">
+                        <!--Row 1-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_31" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_32" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_33" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 2-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_40" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_41" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_42" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 3-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_49" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_50" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_51" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!--Grid 6-->
+                <Border BorderBrush="Black"
+                        BorderThickness="2,2,4,2"
+                        Margin="0,0,10,0">
+                    <StackPanel Orientation="Vertical">
+                        <!--Row 1-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_34" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_35" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_36" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 2-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_43" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_44" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_45" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 3-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_52" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_53" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_54" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <!--Section Row 3-->
+            <StackPanel Orientation="Horizontal">
+                <!--Grid 7-->
+                <Border BorderBrush="Black"
+                        BorderThickness="4,2,2,4"
+                        Margin="10,0,0,10">
+                    <StackPanel Orientation="Vertical">
+                        <!--Row 1-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_55" Style="{StaticResource GridBoxStyle}"/>
+                            <TextBox Name="TextBox_56" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_57" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 2-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_64" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_65" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_66" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 3-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_73" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_74" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_75" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!--Grid 8-->
+                <Border BorderBrush="Black"
+                        BorderThickness="2,2,2,4"
+                        Margin="0,0,0,10">
+                    <StackPanel Orientation="Vertical">
+                        <!--Row 1-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_58" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_59" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_60" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 2-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_67" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_68" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_69" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 3-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_76" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_77" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_78" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <!--Grid 9-->
+                <Border BorderBrush="Black"
+                        BorderThickness="2,2,4,4"
+                        Margin="0,0,0,10">
+                    <StackPanel Orientation="Vertical">
+                        <!--Row 1-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_61" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_62" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_63" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 2-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_70" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_71" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_72" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                        <!--Row 3-->
+                        <StackPanel Orientation="Horizontal">
+                            <TextBox Name="TextBox_79" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_80" Style="{StaticResource GridBoxStyle}" />
+                            <TextBox Name="TextBox_81" Style="{StaticResource GridBoxStyle}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <Button Name="Button_Run"
+                    Margin="10"
+                    FontSize="18">Run</Button>
+
+
+
+        </StackPanel>
+        
+        
+        
         
     </Grid>
 </Window>

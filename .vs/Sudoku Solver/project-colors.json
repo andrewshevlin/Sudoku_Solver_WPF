@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "18784291-272c-4dd4-a4e7-8cff329f46be": {
+      "ProjectGuid": "18784291-272c-4dd4-a4e7-8cff329f46be",
+      "DisplayName": "Sudoku Solver",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
